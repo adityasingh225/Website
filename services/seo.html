@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Services - Aditya Tomar</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            background-color: #e6ffe6;
+            min-height: 100vh;
+        }
+
+        .service-content {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 2rem;
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .service-header h1 {
+            font-size: 3rem;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateZ(20px); }
+            50% { transform: translateZ(40px); }
+        }
+
+        .service-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 15px;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+            pointer-events: none;
+        }
+
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-list {
+            margin: 1rem 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #666;
+        }
+
+        .feature-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #00ff9d;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #333;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-link:hover {
+            color: #00ff9d;
+            background: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="service-content">
+        <div class="service-header">
+            <h1>SEO Services</h1>
+        </div>
+        <div class="service-details">
+            <div class="feature-card">
+                <h3>What We Offer</h3>
+                <p>Our comprehensive SEO services are designed to boost your website's visibility and drive organic traffic. We implement data-driven strategies that improve your search engine rankings and increase your online presence. Our approach combines technical SEO optimization, content strategy, and performance enhancement to deliver measurable results. We conduct thorough keyword research, optimize on-page elements, improve site architecture, and build quality backlinks. Our services include regular performance monitoring, competitor analysis, and detailed reporting to ensure your website maintains its competitive edge in search rankings. Whether you're starting from scratch or looking to improve existing SEO efforts, we provide customized solutions that align with your business objectives and industry standards.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Our SEO Process</h3>
+                <ul class="feature-list">
+                    <li>Technical SEO Audit</li>
+                    <li>Keyword Research & Analysis</li>
+                    <li>On-Page Optimization</li>
+                    <li>Content Strategy & Creation</li>
+                    <li>Link Building</li>
+                    <li>Local SEO Optimization</li>
+                    <li>Performance Monitoring</li>
+                    <li>Analytics & Reporting</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Tools & Technologies</h3>
+                <ul class="feature-list">
+                    <li>Google Analytics & Search Console</li>
+                    <li>SEMrush & Ahrefs</li>
+                    <li>Moz Pro Tools</li>
+                    <li>Screaming Frog SEO Spider</li>
+                    <li>Schema Markup Tools</li>
+                    <li>PageSpeed Insights</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="../index.html" class="back-link">← Back to Services</a>
+    </div>
+</body>
+</html>

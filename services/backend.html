@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Development Services - Aditya Tomar</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            background-color: #e6ffe6;
+            min-height: 100vh;
+        }
+
+        .service-content {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 2rem;
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .service-header h1 {
+            font-size: 3rem;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateZ(20px); }
+            50% { transform: translateZ(40px); }
+        }
+
+        .service-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 15px;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+            pointer-events: none;
+        }
+
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-list {
+            margin: 1rem 0;
+            list-style: none;
+        }
+
+        .feature-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #666;
+        }
+
+        .feature-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #00ff9d;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #333;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-link:hover {
+            color: #00ff9d;
+            background: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="service-content">
+        <div class="service-header">
+            <h1>Backend Development Services</h1>
+        </div>
+        <div class="service-details">
+            <div class="feature-card">
+                <h3>What We Offer</h3>
+                <p>Our backend development services focus on building robust, scalable, and secure server-side applications that power your web solutions. We deliver high-performance backend systems with efficient database architectures, RESTful APIs, and microservices that can handle heavy workloads. Our solutions include comprehensive security measures, automated testing, and continuous integration pipelines to ensure reliability. We also implement caching strategies, load balancing, and database optimization to maximize performance. Whether you need a custom API, database design, or complete backend infrastructure, we create scalable solutions that grow with your business while maintaining industry best practices for security and performance.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Our Backend Development Process</h3>
+                <ul class="feature-list">
+                    <li>API Development and Integration</li>
+                    <li>Database Design and Optimization</li>
+                    <li>Server-side Application Development</li>
+                    <li>Cloud Infrastructure Setup</li>
+                    <li>Security Implementation</li>
+                    <li>Performance Optimization</li>
+                    <li>Scalability Planning</li>
+                    <li>Maintenance and Support</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>Technologies We Use</h3>
+                <ul class="feature-list">
+                    <li>Node.js, Python, PHP</li>
+                    <li>Express.js, Django, Laravel</li>
+                    <li>MongoDB, MySQL, PostgreSQL</li>
+                    <li>RESTful APIs, GraphQL</li>
+                    <li>AWS, Google Cloud, Azure</li>
+                    <li>Docker, Kubernetes</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="../index.html" class="back-link">← Back to Services</a>
+    </div>
+</body>
+</html>
